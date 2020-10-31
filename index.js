@@ -66,7 +66,7 @@ function OnClickCal() {
 
     const data = { num1, num2, choice }
 
-    fetch("https://coherent-grandiose-objective.glitch.me", {
+    fetch("https://industrious-dapper-band.glitch.me/", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
