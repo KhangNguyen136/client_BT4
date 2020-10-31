@@ -22,14 +22,9 @@ function change2() {
     }
     return true;
 }
-var form = document.getElementById("input");
-console.log(form)
-form.addEventListener("submit", (event) =>{
+
+function OnClickCal(event) {
     event.preventDefault()
-    OnClickCal()
-}
-)
-function OnClickCal() {
     var msg = document.getElementById("msg");
     msg.innerHTML = "";
     var num1 = parseFloat(document.getElementById("number1").value);
