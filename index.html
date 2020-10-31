@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <title>BTCN02</title>
+    <!-- <script src="main.js"></script> -->
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bé tập tính</h1>
+        <form id="input">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="number1"> Số thứ nhất</label>
+                </div>
+                <div class="col-sm-3">
+                    <input class="inputText" type="text" name="num1" id="number1" onchange="change1()">
+                </div>
+                <div class="col-sm-1">
+                    <input class="w3-radio" type="radio" id="radio_sum" name="choice" value="sum">
+                    <label>Cộng</label>
+                </div>
+                <div class="col-sm-1">
+                    <input class="w3-radio" type="radio" id="radio_minus" name="choice" value="minus">
+                    <label>Trừ</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="number2"> Số thứ hai</label>
+                </div>
+                <div class="col-sm-3">
+                    <input class="inputText" type="text" name="num2" id="number2" onchange="change2()">
+                </div>
+                <div class="col-sm-1">
+                    <input class="w3-radio" type="radio" id="radio_mul" name="choice" value="mul">
+                    <label>Nhân</label>
+                </div>
+                <div class="col-sm-1">
+                    <input class="w3-radio" type="radio" id="radio_div" name="choice" value="div">
+                    <label>Chia</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <p>Kết quả</p>
+                </div>
+                <div class="col-sm-3">
+                    <input class="inputText" type="text" id="result" readonly>
+                </div>
+                <div class="col-sm-2">
+                    <button id="submit" type="submit" >Tính</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-sm-2">
+                <label>Thông báo</label>
+            </div>
+            <div class="col-sm-8  msgCol">
+                <p id="msg">
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>

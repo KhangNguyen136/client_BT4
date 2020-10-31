@@ -1,0 +1,11 @@
+.inputText{
+    width: 100%;
+}
+#calBut{
+    width: 30%;
+    max-width: 100px;
+    min-width: 45px;
+}
+body{
+    background-color: whitesmoke;
+}
